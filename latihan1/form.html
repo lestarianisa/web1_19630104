@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width"=device-widith, initial-scale=1.0">
+    <title>Belajar Membuat Form</title>
+</head>
+<body>
+    <form action="proses_form.php" method="GET">
+       <label>Nama Lengkap:</label> 
+        <input type="text" name="nama" id="nama"/>
+        <br/>
+
+        <label>Password:</label>
+        <input type="password" name="password"/>
+        <br/>
+        <label>Jenis Kelamin</label>
+        <input type="radio" name="jenis_kelamin" value="laki-laki" checked/>
+        laki-laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan" checked/>
+        Perempuan
+        <br/>
+
+        <label>Hobi</label>
+        <input type="checkbox" name="hobi_ngoding" /> Ngoding
+        <input type="checkbox" name="hobi_nulis" checked /> Menulis
+        <input type="checkbox" name="hobi_mancing" /> Memancing
+        <br/>
+
+        <label>Asal Kota</label>
+        <select name="asal_kota" >
+        <option value="Kota Jakarta"> Jakarta</option>
+        <option value="Kota Bandung">Bandung</option>
+        <otion value="Kota Semarang" selected>Banjarmasin</otion>
+
+        </select>
+        <br />
+        <label>Komentar Anda</label>
+        <textarea name="komentar" rows="5" cols="20">
+        </textarea>
+        <br/>
+        <input type="submit" value="Sumbit" >
+    </form>
+    
+</body>
+</html>
